@@ -50,7 +50,7 @@ public class InteractableManager : MonoBehaviour
     }
 
     //This Function is used to locate all objects in the camera view related to interactable object
-    void LocateAllInteractableObjects()
+    public void LocateAllInteractableObjects()
     {
         for (int i = 0; i < this.transform.childCount; i++) 
         {
@@ -61,4 +61,5 @@ public class InteractableManager : MonoBehaviour
         }
         
     }
+
 }
