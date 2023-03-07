@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class EnemyMovement : MonoBehaviour
 {
     // Enemy's Movement Speed
     public float speed = 8f;
     
     // Keep these static.
     private float zOrder = 15f;
-    private float yOrder = 0.99f;
+    private float yOrder = 0.66f;
 
     float[] xPos;
 
@@ -55,7 +55,6 @@ public class Enemy : MonoBehaviour
         {
             Move();
         }
-
     }
 
     int ChooseNextMovement(int previousChoice)
@@ -77,18 +76,25 @@ public class Enemy : MonoBehaviour
         if (transform.position.x < xPos[movementChoice] && transform.position.x != xPos[movementChoice])
         {
             transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
+            if (transform.position.x >= xPos[movementChoice])
+            {
+                moving = false;
+                // canMove would hypothetically be set True somewhere else? Maybe?
+                canMove = true;
+            }
         }
         else if (transform.position.x > xPos[movementChoice] && transform.position.x != xPos[movementChoice])
         {
             transform.position += new Vector3(-speed * Time.deltaTime, 0, 0);
+            if (transform.position.x <= xPos[movementChoice])
+            {
+                moving = false;
+                // canMove would hypothetically be set True somewhere else? Maybe?
+                canMove = true;
+            }
         }
 
-        if (transform.position.x == xPos[movementChoice])
-        {
-            moving = false;
-            // canMove would hypothetically be set True somewhere else? Maybe?
-            canMove = true;
-        }
+
             
 
     }

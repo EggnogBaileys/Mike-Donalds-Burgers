@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using Palmmedia.ReportGenerator.Core.Parser.Analysis;
+//using Palmmedia.ReportGenerator.Core.Parser.Analysis;
 
 public class Dialogue : MonoBehaviour
 {
