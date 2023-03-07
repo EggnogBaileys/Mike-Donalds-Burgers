@@ -38,6 +38,8 @@ ExportedObj/
 *.VC.db
 
 # Unity3D generated meta files
+*.meta
+*.fbx.meta
 *.pidb.meta
 *.pdb.meta
 *.mdb.meta
@@ -61,3 +63,6 @@ Thumbs.db.meta
 
 # VS Code
 *.vscode
+.vsconfig
+*.csproj
+*.json
