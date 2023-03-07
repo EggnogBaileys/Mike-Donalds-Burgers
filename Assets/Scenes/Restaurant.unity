@@ -932,7 +932,9 @@ GameObject:
   - component: {fileID: 860619326}
   - component: {fileID: 860619325}
   - component: {fileID: 860619327}
-  m_Layer: 0
+  - component: {fileID: 860619328}
+  - component: {fileID: 860619329}
+  m_Layer: 6
   m_Name: Cashier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1019,6 +1021,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 963194225}
+--- !u!114 &860619328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860619324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ca74566e4fba94b808f84379037b6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractableType: 1
+  cursor_appearance: {fileID: 2800000, guid: 8fc580ad0b92c5146bdce7afcedd37d0, type: 3}
+  message: NPC Interaction!
+--- !u!65 &860619329
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860619324}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.40127972, y: 1.204474, z: 0.20000005}
+  m_Center: {x: 0.0040017366, y: 0.021204084, z: -1.35696e-18}
 --- !u!1001 &874727751
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1206,8 +1236,8 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
-  - component: {fileID: 963194230}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194231}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1298,14 +1328,14 @@ MonoBehaviour:
   right: 97
   left: 100
   step: 1
-  rot_right: 90
-  rot_left: -90
+  rot_right: -90
+  rot_left: 90
   rot_back: 180
   floor:
     serializedVersion: 2
     m_Bits: 8
-  col_length: 1.53
---- !u!114 &963194230
+  col_length: 1.1
+--- !u!114 &963194231
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1314,21 +1344,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 965da86eab8c17245b96f390cd32c303, type: 3}
+  m_Script: {fileID: 11500000, guid: a5d5542a6cafb09428d414981cb06ef0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forward: 119
-  back: 115
-  right: 97
-  left: 100
-  step: 1
-  rot_right: -180
-  rot_left: 180
-  rot_back: 360
-  floor:
+  CameraRef: {fileID: 963194227}
+  Interactables:
     serializedVersion: 2
-    m_Bits: 8
-  col_length: 1.1
+    m_Bits: 64
+  interact: 0
+  raycast_range: 0.83
+  cursor: {fileID: 2800000, guid: 8182a43c76cef8649af1f280b5c1a9cb, type: 3}
+  defaultcursor: {fileID: 2800000, guid: 8182a43c76cef8649af1f280b5c1a9cb, type: 3}
 --- !u!4 &980302252 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8367576409685244162, guid: 11befece66a35b246a2c1ce01705f36c, type: 3}
