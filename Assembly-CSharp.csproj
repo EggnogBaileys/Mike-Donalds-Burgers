@@ -57,19 +57,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Combat\Controller.cs" />
-    <Compile Include="Assets\Scripts\ManageInteractible.cs" />
     <Compile Include="Assets\Scripts\NPC.cs" />
     <Compile Include="Assets\Scripts\Combat\EnemyMovement.cs" />
-    <Compile Include="Assets\Scripts\InteractableBust.cs" />
-    <Compile Include="Assets\Scripts\ManageVisible.cs" />
-    <Compile Include="Assets\Scripts\InteractableManager.cs" />
-    <Compile Include="Assets\Scripts\Cursor Controls.cs" />
+    <Compile Include="Assets\Scripts\Player_Interaction.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Dialogue.cs" />
-    <Compile Include="Assets\Scripts\CursorTracker.cs" />
-    <Compile Include="Assets\Scripts\IInteractable.cs" />
+    <Compile Include="Assets\Scripts\Interactable.cs" />
+    <Compile Include="Assets\Scripts\Combat\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\Player_Movement.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueTriggers.cs" />
-    <Compile Include="Assets\Scripts\Combat\EnemyAttack.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
