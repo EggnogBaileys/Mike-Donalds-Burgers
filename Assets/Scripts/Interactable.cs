@@ -10,6 +10,8 @@ public enum eInteractableType
 
 public class Interactable : MonoBehaviour
 {
+    public int interacted = 0;
+
     [Header("Interaction: ")]
     [SerializeField] public eInteractableType InteractableType;
     [SerializeField] public Texture2D cursor_appearance;
@@ -32,9 +34,11 @@ public class Interactable : MonoBehaviour
         switch(InteractableType)
         {
             case eInteractableType.Object:
+                interacted++;
                 print(message); //Test
                 break;
             case eInteractableType.NPC:
+                interacted++;
                 print(message); //Test
                 //call dialog script like below
                 //this.GetComponent<dialogscript>().dialog();

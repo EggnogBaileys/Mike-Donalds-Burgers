@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DialogueTriggers : MonoBehaviour
 {
+
     public Dialogue dialogueBox;
     public GameObject physicalBox;
     public string[] dialogue;
@@ -17,7 +18,7 @@ public class DialogueTriggers : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (this.GetComponent<Interactable>().interacted > 0)
         {
             for (int i = 0; i < dialogue.Length; i++)
             {

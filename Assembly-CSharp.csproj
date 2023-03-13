@@ -60,9 +60,13 @@
     <Compile Include="Assets\Scripts\NPC.cs" />
     <Compile Include="Assets\Scripts\Combat\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\Player_Interaction.cs" />
+    <Compile Include="Assets\Scripts\Combat\EAHitbox.cs" />
+    <Compile Include="Assets\Scripts\Combat\PAHitbox.cs" />
+    <Compile Include="Assets\Scripts\Combat\UI\Warning.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Dialogue.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\Combat\EnemyAttack.cs" />
+    <Compile Include="Assets\Scripts\Combat\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\Player_Movement.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueTriggers.cs" />
   </ItemGroup>
