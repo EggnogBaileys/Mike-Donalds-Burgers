@@ -658,7 +658,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ff47412972437bd41b2b2f79a6600c9c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dc5aaa845b53f9e48b4f1da30105248c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1012,7 +1012,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2022005162}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1142138af77f5da468ed33d4afc91660, type: 3}
+  m_Script: {fileID: 11500000, guid: a11d1d4f1ad380d49a92aa083d6e2c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 1269545005}
@@ -1026,8 +1026,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2069478424}
   - component: {fileID: 2069478425}
-  - component: {fileID: 2069478426}
   - component: {fileID: 2069478427}
+  - component: {fileID: 2069478426}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -1043,8 +1043,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2069478423}
   m_LocalRotation: {x: -0.000000014917417, y: 0.0000056326385, z: -0.0000058584073, w: 1}
-  m_LocalPosition: {x: 0, y: 0.76, z: 15}
-  m_LocalScale: {x: 4.278251, y: 4.278251, z: 4.278251}
+  m_LocalPosition: {x: -0, y: 0.76, z: 15}
+  m_LocalScale: {x: 0.4589708, y: 0.4589708, z: 0.4589708}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1091,7 +1091,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 858413053ccc54840a9e5d37e59200ba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0d873cef91422f24592e7a0d72945eee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1111,10 +1111,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2069478423}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d67497119e147d043a83ecf4bde60287, type: 3}
+  m_Script: {fileID: 11500000, guid: 32e0d80bfebdf68458d2aed9899d8ae0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 8
   moving: 0
   canMove: 1
   movementChoice: 0
@@ -1127,11 +1127,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2069478423}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac709e35d5b77ab4c80983c3cc206f0c, type: 3}
+  m_Script: {fileID: 11500000, guid: 3fb59df5a7aaed7429b94058f6b511bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   warning: {fileID: 2022005162}
   attackDelay: 1
-  attackDelaySlow: 1.25
-  attackDelayFast: 1
+  attackDelaySlow: 1.5
+  attackDelayFast: 0.75
   attackNumber: 3
