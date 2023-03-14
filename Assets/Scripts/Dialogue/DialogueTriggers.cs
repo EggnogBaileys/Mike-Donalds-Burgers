@@ -18,14 +18,17 @@ public class DialogueTriggers : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (this.GetComponent<Interactable>().interacted > 0)
+        if (this.GetComponent<Interactable>() != null)
         {
-            for (int i = 0; i < dialogue.Length; i++)
+            if (this.GetComponent<Interactable>().interacted > 0)
             {
-                dialogueBox.dialogue[i] = dialogue[i];
+                for (int i = 0; i < dialogue.Length; i++)
+                {
+                    dialogueBox.dialogue[i] = dialogue[i];
+                }
+                physicalBox.SetActive(true);
+                dialogueBox.StartDialogue();
             }
-            physicalBox.SetActive(true);
-            dialogueBox.StartDialogue();
-        }
+        }    
     }
 }
