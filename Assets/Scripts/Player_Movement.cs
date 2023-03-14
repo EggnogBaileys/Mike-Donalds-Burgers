@@ -25,10 +25,22 @@ public class Player_Movement : MonoBehaviour
     private Ray movement_ray;
     private RaycastHit movement_hit;
 
+    [Header("Collision: ")]
+    [SerializeField] public GameObject[] HeldItems = new GameObject[10];
+    [SerializeField] public int NumberOfHeldItems = 0;
+    [SerializeField] private int HeldItemIndex = 0;
+    [SerializeField] private GameObject CurrentItem;
+
+    private void Start()
+    {
+        HeldItems = new GameObject[10];
+    }
+
     void Update()
     {
+        HeldItem();
         //Movement
-        if(Input.GetKeyDown(forward))
+        if (Input.GetKeyDown(forward))
         {
             can_move = true;
             Collision();
@@ -57,6 +69,31 @@ public class Player_Movement : MonoBehaviour
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out movement_hit, col_length, floor))
         {
             can_move = false;
+        }
+    }
+
+    void HeldItem()
+    {
+        var lastindex = HeldItemIndex;
+        if(Input.GetKeyDown(KeyCode.DownArrow) && HeldItemIndex > 0)
+        {
+            HeldItemIndex--;
+        }
+        else if (Input.GetKeyDown(KeyCode.UpArrow) && HeldItemIndex < HeldItems.Length)
+        {
+            HeldItemIndex++;
+        }
+        
+        if(lastindex != HeldItemIndex)
+        {
+            if (HeldItems[lastindex] != null)
+            {
+                Object.Destroy(CurrentItem);
+            }
+            if (HeldItems[HeldItemIndex] != null)
+            {
+                CurrentItem = Object.Instantiate(HeldItems[HeldItemIndex], transform.position, Quaternion.identity);
+            }
         }
     }
 }
