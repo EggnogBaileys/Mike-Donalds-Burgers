@@ -56,19 +56,20 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Combat\EnemyMovement.cs" />
-    <Compile Include="Assets\Scripts\Combat\UI\Warning.cs" />
-    <Compile Include="Assets\Scripts\Combat\PAHitbox.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Dialogue.cs" />
+    <Compile Include="Assets\Scripts\Combat\PAHitbox.cs" />
+    <Compile Include="Assets\Scripts\Interactable.cs" />
+    <Compile Include="Assets\Scripts\Combat\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\NPC.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\DialogueTriggers.cs" />
-    <Compile Include="Assets\Scripts\Combat\EnemyAttack.cs" />
-    <Compile Include="Assets\Scripts\Combat\EAHitbox.cs" />
-    <Compile Include="Assets\Scripts\Combat\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\Combat\Controller.cs" />
+    <Compile Include="Assets\Scripts\Combat\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\Player_Interaction.cs" />
     <Compile Include="Assets\Scripts\Player_Movement.cs" />
-    <Compile Include="Assets\Scripts\Interactable.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\DialogueTriggers.cs" />
+    <Compile Include="Assets\Scripts\Combat\EAHitbox.cs" />
+    <Compile Include="Assets\Scripts\Combat\UI\Warning.cs" />
+    <Compile Include="Assets\Scripts\Combat\EnemyAttack.cs" />
+    <Compile Include="Assets\Scripts\Pixel Shader\PixelShader.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -77,6 +78,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\Scripts\Pixel Shader\PixelEffect.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />

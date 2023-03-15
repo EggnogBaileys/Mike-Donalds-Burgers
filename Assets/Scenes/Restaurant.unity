@@ -140,11 +140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86f82b7567e81d84cab52e1e21c09c0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interacted: 0
-  InteractableType: 0
-  cursor_appearance: {fileID: 2800000, guid: e124ac2689a113c4c9df9d23dbf45afa, type: 3}
-  message: 
-  grabbable: {fileID: 4545494028490956773, guid: 585102d373da7a84fa118aa531653c39, type: 3}
 --- !u!65 &26423747
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -989,11 +984,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86f82b7567e81d84cab52e1e21c09c0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interacted: 0
-  InteractableType: 0
-  cursor_appearance: {fileID: 2800000, guid: e124ac2689a113c4c9df9d23dbf45afa, type: 3}
-  message: 
-  grabbable: {fileID: 4226740776498002343, guid: 0c12906c9e5aa6d4bbfb22368005505a, type: 3}
 --- !u!65 &684293604
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1218,7 +1208,7 @@ SpriteRenderer:
   m_Size: {x: 8.15, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &860619326
@@ -1261,11 +1251,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86f82b7567e81d84cab52e1e21c09c0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interacted: 0
-  InteractableType: 1
-  cursor_appearance: {fileID: 2800000, guid: 515568b6f679f3147aa2a343382a1359, type: 3}
-  message: Hello
-  grabbable: {fileID: 0}
 --- !u!114 &860619331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1278,7 +1263,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57b1a13e15896c84ea5cb3e74434a289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 963194225}
 --- !u!1001 &874727751
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1472,6 +1456,7 @@ GameObject:
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
   - component: {fileID: 963194230}
+  - component: {fileID: 963194231}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1557,22 +1542,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 965da86eab8c17245b96f390cd32c303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forward: 119
-  back: 115
-  right: 97
-  left: 100
-  step: 2
-  rot_right: -90
-  rot_left: 90
-  rot_back: 180
-  floor:
-    serializedVersion: 2
-    m_Bits: 8
-  col_length: 1.1
-  HeldItems: []
-  NumberOfHeldItems: 0
-  HeldItemIndex: 0
-  CurrentItem: {fileID: 0}
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1585,14 +1554,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771a8216c656f3f4a97c633cefa2ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CameraRef: {fileID: 963194227}
-  Interactables:
-    serializedVersion: 2
-    m_Bits: 64
-  interact: 0
-  raycast_range: 1.1
-  cursor: {fileID: 2800000, guid: cd210ce568fa5ae4aa5a1826871c8f37, type: 3}
-  defaultcursor: {fileID: 2800000, guid: cd210ce568fa5ae4aa5a1826871c8f37, type: 3}
+--- !u!114 &963194231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5ec8f852ba3c145ace792c167fe4b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: 12c449aaab71f9c428f9b050dbd3b406, type: 2}
 --- !u!4 &980302252 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8367576409685244162, guid: 11befece66a35b246a2c1ce01705f36c, type: 3}
