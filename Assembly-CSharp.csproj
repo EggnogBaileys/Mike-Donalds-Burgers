@@ -68,8 +68,8 @@
     <Compile Include="Assets\Scripts\Dialogue\DialogueTriggers.cs" />
     <Compile Include="Assets\Scripts\Combat\EAHitbox.cs" />
     <Compile Include="Assets\Scripts\Combat\UI\Warning.cs" />
-    <Compile Include="Assets\Scripts\Combat\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\Pixel Shader\PixelShader.cs" />
+    <Compile Include="Assets\Scripts\Combat\EnemyAttack.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
